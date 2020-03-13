@@ -1,0 +1,24 @@
+{
+  "name": "colingo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sibabalwe47/node-colingo.git"
+  },
+  "author": "Siba N.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sibabalwe47/node-colingo/issues"
+  },
+  "homepage": "https://github.com/sibabalwe47/node-colingo#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
