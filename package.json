@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true"
   },
   "repository": {
     "type": "git",
