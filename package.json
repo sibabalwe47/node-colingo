@@ -2,7 +2,7 @@
   "name": "colingo",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app",
@@ -23,7 +23,9 @@
     "nodemon": "^2.0.2"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "*"
+    "express": "*",
+    "mongoose": "^5.9.4"
   }
 }
