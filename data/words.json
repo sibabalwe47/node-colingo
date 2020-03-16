@@ -1,0 +1,23 @@
+[
+    {
+        "alphabet": "A",
+        "word": "Abomination",
+        "wordTranslated": "Isikizi",
+        "definition": "Isenzo esinokungcola phambi kobuso bukaThixo.",
+        "translated": true
+    },
+    {
+        "alphabet": "B",
+        "word": "Baptism ",
+        "wordTranslated": "Ubhaptizo",
+        "definition": "Umiselo wokuhlambulula izono.",
+        "translated": true
+    },
+    {
+        "alphabet": "C",
+        "word": "Call",
+        "wordTranslated": "",
+        "definition": "",
+        "translated": false
+    }
+]

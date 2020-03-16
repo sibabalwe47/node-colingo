@@ -11,12 +11,18 @@ dotenv.config({path: './config/config.env'})
 // Load Models
 
 const Alphabets = require('./models/Alphabets')
+const Words = require('./models/Word')
 
 // Files
 
 const alphabets = JSON.parse(
-    fs.readFileSync(`${__dirname}/data/alphabets.json`, 'utf-8')
-  );
+  fs.readFileSync(`${__dirname}/data/alphabets.json`, 'utf-8')
+);
+
+const words = JSON.parse(
+  fs.readFileSync(`${__dirname}/data/words.json`, 'utf-8')
+);
+
 
 // Connect to Database
 
@@ -32,7 +38,7 @@ const importData = async () => {
     try {
 
         await Alphabets.create(alphabets);
-
+        await Words.create(words);
 
         console.log('Data imported')
         process.exit()
