@@ -3,9 +3,7 @@ const dotenv = require('dotenv');
 const db = require('./config/db');
 const cors = require('cors')
 
-// apply cors
 
-app.use(cors())
 
 dotenv.config({path: './config/config.env'});
 
@@ -16,6 +14,10 @@ db();
 // Init Express
 
 const app = express()
+
+// apply cors
+
+app.use(cors())
 
 // PORT Number
 
