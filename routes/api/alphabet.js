@@ -5,7 +5,7 @@ const Alphabets = require('../../models/Alphabets')
 
 router.get('/', async (req, res) => {
     try {
-        const alphabets = await Alphabets.find();
+        const alphabets = await Alphabets.find().sort({alphabet: 1});
 
         if(!alphabets) return res.status(400).json({
             msg: 'Alphabets are not loaded'
