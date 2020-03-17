@@ -6,9 +6,9 @@ router.get('/:alphabet', async (req, res) => {
     const alphabet = req.params.alphabet.toUpperCase();
 
     try {
-        const words= await Words.find({ alphabet })
+        const words = await Words.find({ alphabet })
 
-        if(!words) return res.status(400).json({
+        if (!words) return res.status(400).json({
             success: false,
             msg: 'No words added'
         });
@@ -21,6 +21,23 @@ router.get('/:alphabet', async (req, res) => {
     }
 
     res.send(alphabet)
+})
+
+router.get('/', async (req, res) => {
+    try {
+        const words = await Words.find()
+
+        if (!words) return res.status(400).json({
+            success: false,
+            msg: 'No words added'
+        })
+
+        res.json(words)
+
+    } catch (error) {
+        console.log(error)
+        res.status(500).send('Server Error')
+    }
 })
 
 
