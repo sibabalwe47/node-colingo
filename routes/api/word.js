@@ -65,10 +65,13 @@ router.post('/add', [
 
     const newWord = {}
 
+    newWord.alphabet = word[0].toUpperCase();
+
     if (word) newWord.word = word;
     if (wordTranslated) newWord.wordTranslated = wordTranslated;
     if (definition) newWord.definition = definition;
     if (wordTranslated) newWord.translated = true;
+
 
     try {
 
@@ -89,12 +92,6 @@ router.post('/add', [
 
             await singleWord.save()
 
-            // singleWord = new Words();
-
-            // await Words.save()
-
-            // res.json(singleWord)
-            // console.log(2)
             res.json(singleWord)
 
         }
