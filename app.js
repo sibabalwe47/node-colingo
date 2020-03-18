@@ -5,7 +5,7 @@ const cors = require('cors')
 
 
 
-dotenv.config({path: './config/config.env'});
+dotenv.config({ path: './config/config.env' });
 
 //Database connection
 
@@ -18,6 +18,7 @@ const app = express()
 // apply cors
 
 app.use(cors())
+app.use(express.json())
 
 // PORT Number
 

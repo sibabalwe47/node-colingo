@@ -26,6 +26,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "*",
+    "express-validator": "^6.4.0",
     "mongoose": "^5.9.4"
   }
 }
